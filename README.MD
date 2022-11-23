@@ -1,6 +1,12 @@
 # Div in Div
 
+<https://shivan-s.github.io/div-in-div> - [LIVE LINK](https://shivan-s.github.io/div-in-div)
+
 Here is an example of take home problem.
+
+## Demo
+
+[]!(docs/demo.gif)
 
 ## How to use
 
@@ -19,5 +25,3 @@ cd div-in-div
 live-server .
 
 ```
-
-## Demo

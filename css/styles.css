@@ -1,10 +1,13 @@
 .container {
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
 }
 
 #parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80vw;
   height: 80vh;
   background-color: #eeeeee;
