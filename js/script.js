@@ -10,7 +10,6 @@ function dragElem(elem, borderElem) {
   console.log(borderElem.offsetWidth);
   console.log(borderElem.offsetHeight);
 
-
   function getBoundaries() {
     const left = borderElem.getBoundingClientRect().left + window.scrollX;
     const top = borderElem.getBoundingClientRect().top + window.scrollY;
@@ -19,7 +18,7 @@ function dragElem(elem, borderElem) {
       top: top,
       right: left + borderElem.offsetWidth - elem.offsetWidth,
       bottom: top + borderElem.offsetHeight - elem.offsetHeight,
-      }
+    };
   }
 
   function dragMouseDown(e) {
@@ -40,10 +39,10 @@ function dragElem(elem, borderElem) {
     pos3 = e.clientX;
     pos4 = e.clientY;
 
-    let newPositionTop = elem.offsetTop - pos2
-    let newPositionLeft = elem.offsetLeft - pos1
+    let newPositionTop = elem.offsetTop - pos2;
+    let newPositionLeft = elem.offsetLeft - pos1;
 
-    boundaries = getBoundaries()
+    const boundaries = getBoundaries();
 
     if (newPositionTop < boundaries.top) {
       newPositionTop = boundaries.top;
@@ -65,12 +64,12 @@ function dragElem(elem, borderElem) {
     elem.style.left = newPositionLeft + "px";
   }
 
-    function closeDragElement() {
-      document.onmouseup = null;
-      document.onmousemove = null;
-    }
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
 
-    elem.onmousedown = dragMouseDown;
+  elem.onmousedown = dragMouseDown;
 }
 
 dragElem(document.getElementById("child"), document.getElementById("parent"));
