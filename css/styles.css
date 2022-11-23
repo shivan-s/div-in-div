@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#parent {
+  width: 80vw;
+  height: 80vh;
+  background-color: #eeeeee;
+  outline: solid 2px #aaaaaa;
+  z-index: 1;
+}
+
+#child {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #80dfff;
+  border: solid;
+  border-color: #33ccff;
+  z-index: 2;
+}
+
+p {
+  text-align: center;
+  color: #196680;
+}
