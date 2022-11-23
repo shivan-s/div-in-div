@@ -1,12 +1,14 @@
 # Div in Div
 
+[![Build](https://github.com/shivan-s/div-in-div/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/shivan-s/div-in-div/actions/workflows/pages/pages-build-deployment)
+
 <https://shivan-s.github.io/div-in-div> - [LIVE LINK](https://shivan-s.github.io/div-in-div)
 
 Here is an example of take home problem.
 
 ## Demo
 
-[demo]!(docs/demo.gif)
+![demo](docs/demo.gif)
 
 ## How to use
 
