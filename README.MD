@@ -6,7 +6,7 @@ Here is an example of take home problem.
 
 ## Demo
 
-[]!(docs/demo.gif)
+[demo]!(docs/demo.gif)
 
 ## How to use
 
